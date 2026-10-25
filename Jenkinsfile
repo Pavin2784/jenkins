@@ -7,7 +7,7 @@ pipeline{
                 checkout scm
             }
         }
-    }
+    
 
     stage('install dependenies'){
         steps{
@@ -21,6 +21,7 @@ pipeline{
                   node server.js
                   
                 '''
+                }
             }
         }
     }
