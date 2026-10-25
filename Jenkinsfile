@@ -15,6 +15,9 @@ pipeline{
               npm install express mysql2 dotenv
             '''
         }
+    }
+
+
         stage('start the server'){
             steps{
                 sh '''
@@ -25,4 +28,3 @@ pipeline{
             }
         }
     }
-}
